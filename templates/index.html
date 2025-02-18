@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Network Graph Viewer</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cytoscape/3.21.0/cytoscape.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
+
+    <link rel="stylesheet" href="../static/style.css">
+  </head>
+  <body>
+    <h1>Upload and Visualize a Network File</h1>
+
+    <div class="upload-container">
+      <input type="file" id="fileInput" />
+      <button onclick="handleFile()">Parse & Visualize</button>
+
+      <input type="text" id="queryNode" placeholder="Enter node IDs (comma-separated)" />
+      <button onclick="queryNodes()">Extract Subgraph</button>
+
+      <select id="layoutSelect" onchange="changeLayout()">
+        <option value="grid">Grid</option>
+        <option value="circle">Circle</option>
+        <option value="cose">CoSE</option>
+        <option value="breadthfirst">Breadthfirst</option>
+      </select>
+    </div>
+    <div id="error-message"></div>
+    <div id="cy"></div>
+ 
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+  </body>
+</html>
