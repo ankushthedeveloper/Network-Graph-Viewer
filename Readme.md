@@ -22,7 +22,7 @@ A **web-based network visualization tool** that allows users to upload **CSV or 
 │   ├── /css
 │── /templates
 │   ├── index.html      # Main frontend UI
-│── app.py             # Flask backend (if needed)
+│── app.py             # Flask backend 
 │── requirements.txt   # Python dependencies
 │── README.md          # Project documentation
 ```
