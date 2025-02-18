@@ -33,7 +33,7 @@ A **web-based network visualization tool** that allows users to upload **CSV or 
 
 ### **1️⃣ Clone the Repository**
 ```bash
-git clone (https://github.com/ankushthedeveloper/Network-Graph-Viewer.git)
+git clone https://github.com/ankushthedeveloper/Network-Graph-Viewer.git
 cd network-graph-viewer
 ```
 
